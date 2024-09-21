@@ -12,6 +12,16 @@ A Neovim plugin that provides language support for [Quandary](https://github.com
 
 ## Installation
 
+### Using [LazyNvim](https://github.com/folke/lazy.nvim):
+
+```lua
+{
+  "your-username/quandary-nvim",
+  ft = {"quandary"},
+  config = true,
+}
+```
+
 ### Using [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
 ```lua
