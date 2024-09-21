@@ -1,4 +1,4 @@
-# Quandary for Neovim
+# Quandary Language Support for Neovim
 
 A Neovim plugin that provides language support for [Quandary](https://github.com/mdbond/Quandary-Public), including syntax highlighting.
 
