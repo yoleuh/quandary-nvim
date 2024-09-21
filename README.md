@@ -6,6 +6,9 @@ A Neovim plugin that provides language support for [Quandary](https://github.com
 
 - Syntax highlighting for Quandary files (`.q` and `.qet` extensions)
 - Automatic filetype detection
+- Basic language configuration (comments, formatting)
+
+
 
 ## Installation
 
