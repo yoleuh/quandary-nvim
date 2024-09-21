@@ -23,13 +23,20 @@ A Neovim plugin that provides language support for [Quandary](https://github.com
 ### Using [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
 ```lua
-use 'yoleuh/quandary.nvim'
+use 'yoleuh/quandary-nvim'
 ```
 
 ### Using [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```vim
-Plug 'yoleuh/quandary.nvim'
+Plug 'yoleuh/quandary-nvim'
+```
+## Configuration
+
+Add the following to your `init.lua`:
+
+```lua
+require('quandary')
 ```
 
 ### Usage
@@ -39,14 +46,6 @@ Once installed, quandary-nvim will automatically activate for any `.q` or `.qet`
 - Syntax highlighting
 - Proper comment formatting (use `gc` in normal mode to toggle comments)
 - Smart indentation
-
-## Configuration
-
-Add the following to your `init.lua`:
-
-```lua
-require('quandary')
-```
 
 ## Screenshots
 ![Quandary Syntax Highlighting](images/png.png)
