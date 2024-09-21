@@ -1,25 +1,26 @@
 local M = {}
 
--- Define Quandary keywords
-local keywords = {
-    'if', 'else', 'while', 'return', 'mutable', 'free', 'print', 'nil'
-}
+function M.setup(opts)
+    opts = opts or {}
+    -- Define Quandary keywords
+    local keywords = opts.keywords or {
+        'if', 'else', 'while', 'return', 'mutable', 'free', 'print', 'nil'
+    }
 
--- Define Quandary types
-local types = {
-    'int', 'Q', 'Ref', 'NonNilRef', 'List', 'NonEmptyList'
-}
+    -- Define Quandary types
+    local types = opts.types or {
+        'int', 'Q', 'Ref', 'NonNilRef', 'List', 'NonEmptyList'
+    }
 
--- Define Quandary operators
-local operators = {
-    '+', '-', '*', '=', '==', '!=', '<', '>', '<=', '>=', '&&', '||', '!'
-}
+    -- Define Quandary operators
+    local operators = opts.operators or {
+        '+', '-', '*', '=', '==', '!=', '<', '>', '<=', '>=', '&&', '||', '!'
+    }
 
-local function create_syntax_match(group_name, words)
-    vim.cmd('syntax keyword ' .. group_name .. ' ' .. table.concat(words, ' '))
-end
+    local function create_syntax_match(group_name, words)
+        vim.cmd('syntax keyword ' .. group_name .. ' ' .. table.concat(words, ' '))
+    end
 
-function M.setup()
     -- Clear existing syntax rules
     vim.cmd('syntax clear')
 
@@ -49,14 +50,5 @@ function M.setup()
     vim.api.nvim_set_hl(0, 'quandaryComment', { link = 'Comment' })
     vim.api.nvim_set_hl(0, 'quandaryFunction', { link = 'Function' })
 end
-
--- Set up syntax highlighting when a Quandary file is opened
-vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
-    pattern = { "*.q", "*.qet" },
-    callback = function()
-        vim.bo.filetype = "quandary"
-        M.setup()
-    end
-})
 
 return M
