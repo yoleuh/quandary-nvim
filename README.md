@@ -16,7 +16,7 @@ A Neovim plugin that provides language support for [Quandary](https://github.com
 
 ```lua
 {
-  "your-username/quandary-nvim",
+  "yoleuh/quandary-nvim",
   ft = {"quandary"},
   config = true,
 }
