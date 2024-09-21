@@ -28,11 +28,3 @@ Add the following to your `init.lua`:
 ```lua
 require('quandary')
 ```
-
-## License
-
-This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
