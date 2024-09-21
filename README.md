@@ -6,8 +6,21 @@ A Neovim plugin that provides language support for [Quandary](https://github.com
 
 - Syntax highlighting for Quandary files (`.q` and `.qet` extensions)
 - Automatic filetype detection
+- Basic language configuration (comments, formatting)
+
+
 
 ## Installation
+
+### Using [LazyNvim](https://github.com/folke/lazy.nvim):
+
+```lua
+{
+  "yoleuh/quandary-nvim",
+  ft = {"quandary"},
+  config = true,
+}
+```
 
 ### Using [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
