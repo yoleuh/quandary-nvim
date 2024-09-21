@@ -49,3 +49,5 @@ Once installed, quandary-nvim will automatically activate for any `.q` or `.qet`
 
 ## Screenshots
 ![Quandary Syntax Highlighting](images/png.png)
+![Quandary Syntax Highlighting Differences](images/differences.png)
+
