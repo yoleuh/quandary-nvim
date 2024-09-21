@@ -8,8 +8,6 @@ A Neovim plugin that provides language support for [Quandary](https://github.com
 - Automatic filetype detection
 - Basic language configuration (comments, formatting)
 
-
-
 ## Installation
 
 ### Using [LazyNvim](https://github.com/folke/lazy.nvim):
@@ -34,6 +32,14 @@ use 'yoleuh/quandary.nvim'
 Plug 'yoleuh/quandary.nvim'
 ```
 
+### Usage
+
+Once installed, quandary-nvim will automatically activate for any `.q` or `.qet` files. You'll immediately benefit from:
+
+- Syntax highlighting
+- Proper comment formatting (use `gc` in normal mode to toggle comments)
+- Smart indentation
+
 ## Configuration
 
 Add the following to your `init.lua`:
@@ -41,3 +47,6 @@ Add the following to your `init.lua`:
 ```lua
 require('quandary')
 ```
+
+## Screenshots
+![Quandary Syntax Highlighting](images/png.png)
