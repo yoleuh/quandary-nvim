@@ -12,13 +12,13 @@ A Neovim plugin that provides language support for [Quandary](https://github.com
 ### Using [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
 ```lua
-use 'yourusername/quandary.nvim'
+use 'yoleuh/quandary.nvim'
 ```
 
 ### Using [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```vim
-Plug 'yourusername/quandary.nvim'
+Plug 'yoleuh/quandary.nvim'
 ```
 
 ## Configuration
