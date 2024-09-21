@@ -48,8 +48,8 @@ Once installed, quandary-nvim will automatically activate for any `.q` or `.qet`
 - Smart indentation
 
 ## Screenshots
-Quandary Syntax Highlighting
+### Quandary Syntax Highlighting
 ![Quandary Syntax Highlighting](images/png.png)
-Quandary Syntax Highlighting in Neovim vs Plain Text in VSCode
+### Quandary Syntax Highlighting in Neovim vs Plain Text in VSCode
 ![Quandary Syntax Highlighting Differences](images/differences.png)
 
